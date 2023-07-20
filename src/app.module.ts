@@ -13,19 +13,22 @@ import { StudentModule } from './modules/student/student.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      isGlobal: true,
-      envFilePath: [".dev.env"],
-    }),
+    // ConfigModule.forRoot({
+    //   isGlobal: true,
+    //   envFilePath: [".dev.env"],
+    // }),
 
-    MongooseModule.forRootAsync({
-      imports: [ConfigModule],
-      useFactory: (configService: ConfigService) => ({
-        uri: configService.get("MONGO_URI"),
-      }),
-      inject: [ConfigService],
+    // MongooseModule.forRootAsync({
+    //   imports: [ConfigModule],
+    //   useFactory: (configService: ConfigService) => ({
+    //     uri: configService.get("MONGO_URI"),
+    //   }),
+    //   inject: [ConfigService],
+    // }),
+  
+  MongooseModule.forRoot("mongodb+srv://edviron:DHyKr5dLNE0JzHfs@cluster0.0pdm9qb.mongodb.net/?retryWrites=true&w=majority", {
     }),
-
+  
     FeeHeadModule,
     DueModule,
     InstallmentModule,
