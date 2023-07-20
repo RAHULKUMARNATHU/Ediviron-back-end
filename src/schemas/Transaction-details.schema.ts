@@ -1,7 +1,7 @@
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Types } from "mongoose";
 import { ApiProperty } from "@nestjs/swagger";
-import { PaymentAttempt, PaymentAttemptSchema } from "./Payment-attempt.schema";
+import { PaymentAttempt, PaymentAttemptSchema } from "../schemas/Payment-attempt.schema";
 
 @Schema({ timestamps: true })
 export class Transaction extends Document {

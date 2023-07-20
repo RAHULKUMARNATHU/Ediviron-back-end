@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body } from "@nestjs/common";
-import { InstallmentService } from "./installment.service";
-import { CreateInstallmentDto } from "./dto/create-installment.dto";
+import { InstallmentService } from "../../modules/installment/installment.service";
+import { CreateInstallmentDto } from "../../modules/installment/dto/create-installment.dto";
 import { ApiTags, ApiOperation, ApiResponse } from "@nestjs/swagger";
-import { Installment } from "src/schemas/Installment.schema";
+import { Installment } from "../../schemas/Installment.schema";
 
 @Controller("installment")
 @ApiTags("Installments")

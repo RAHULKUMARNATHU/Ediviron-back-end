@@ -1,11 +1,11 @@
 import { Injectable } from "@nestjs/common";
-import { CreateTransactionDto } from "./dto/create-transaction.dto";
+import { CreateTransactionDto } from "../../modules/transaction/dto/create-transaction.dto";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
 import {
   Transaction,
   TransactionDocument,
-} from "src/schemas/Transaction-details.schema";
+} from "../../schemas/Transaction-details.schema";
 
 @Injectable()
 export class TransactionService {

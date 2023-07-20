@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, Param } from "@nestjs/common";
-import { InvoiceService } from "./invoice.service";
-import { CreateInvoiceDto } from "./dto/create-invoice.dto";
+import { InvoiceService } from "../../modules/invoice/invoice.service";
+import { CreateInvoiceDto } from "../../modules/invoice/dto/create-invoice.dto";
 import { ApiTags, ApiOperation, ApiResponse } from "@nestjs/swagger";
-import { Invoice } from "src/schemas/Invoice-schema";
+import { Invoice } from "../../schemas/Invoice-schema";
 
 @Controller("invoice")
 @ApiTags("Invoices")

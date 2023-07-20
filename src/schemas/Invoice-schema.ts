@@ -1,7 +1,7 @@
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Types } from "mongoose";
 import { ApiProperty } from "@nestjs/swagger";
-import { Due } from "./Due.schema";
+import { Due } from "../schemas/Due.schema";
 
 enum FeeHeadStatus {
   PENDING = "pending",

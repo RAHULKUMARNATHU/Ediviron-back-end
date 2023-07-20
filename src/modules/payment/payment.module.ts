@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
-import { PaymentService } from "./payment.service";
-import { PaymentController } from "./payment.controller";
+import { PaymentService } from "../../modules/payment/payment.service";
+import { PaymentController } from "../../modules/payment/payment.controller";
 import { MongooseModule } from "@nestjs/mongoose";
-import { Payment, PaymentSchema } from "src/schemas/Payment.schema";
+import { Payment, PaymentSchema } from "../../schemas/Payment.schema";
 
 @Module({
   imports: [

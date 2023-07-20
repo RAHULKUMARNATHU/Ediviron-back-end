@@ -5,7 +5,7 @@ import { ApiProperty } from "@nestjs/swagger";
 enum PaymentMethod {
   CASH = "Cash",
   ONLINE = "Online",
-  CHECQUE = "Cheque",
+  CHEQUE = "Cheque",
 }
 
 @Schema({ timestamps: true })

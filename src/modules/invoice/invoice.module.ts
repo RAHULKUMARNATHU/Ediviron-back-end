@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
-import { InvoiceService } from "./invoice.service";
-import { InvoiceController } from "./invoice.controller";
+import { InvoiceService } from "../../modules/invoice/invoice.service";
+import { InvoiceController } from "../../modules/invoice/invoice.controller";
 import { MongooseModule } from "@nestjs/mongoose";
-import { Invoice, InvoiceSchema } from "src/schemas/Invoice-schema";
+import { Invoice, InvoiceSchema } from "../../schemas/Invoice-schema";
 
 @Module({
   imports: [

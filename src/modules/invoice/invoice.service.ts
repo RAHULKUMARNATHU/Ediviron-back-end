@@ -1,9 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
-import { CreateInvoiceDto } from "./dto/create-invoice.dto";
-import { Invoice, InvoiceDocument } from "src/schemas/Invoice-schema";
-import { Due } from "src/schemas/Due.schema";
+import { CreateInvoiceDto } from "../../modules/invoice/dto/create-invoice.dto";
+import { Invoice, InvoiceDocument } from "../../schemas/Invoice-schema";
+
 
 @Injectable()
 export class InvoiceService {

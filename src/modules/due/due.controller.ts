@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body } from "@nestjs/common";
 import { ApiTags, ApiOperation, ApiResponse } from "@nestjs/swagger";
-import { DueService } from "./due.service";
-import { CreateDueDto } from "./dto/create-due.dto";
-import { Due } from "src/schemas/Due.schema";
+import { DueService } from "../../modules/due/due.service";
+import { CreateDueDto } from "../../modules/due/dto/create-due.dto";
+import { Due } from "../../schemas/Due.schema";
 
 @Controller("due")
 @ApiTags("Due")

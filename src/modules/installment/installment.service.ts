@@ -1,13 +1,13 @@
 import { Injectable } from "@nestjs/common";
-import { CreateInstallmentDto } from "./dto/create-installment.dto";
+import { CreateInstallmentDto } from "../../modules/installment/dto/create-installment.dto";
 import { InjectModel } from "@nestjs/mongoose";
 import {
   Installment,
   InstallmentDocument,
-} from "src/schemas/Installment.schema";
+} from "../../schemas/Installment.schema";
 import { Model } from "mongoose";
 import { Cron } from "@nestjs/schedule";
-import { Due, DueDocument } from "src/schemas/Due.schema";
+import { Due, DueDocument } from "../../schemas/Due.schema";
 
 @Injectable()
 export class InstallmentService {

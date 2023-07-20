@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body } from "@nestjs/common";
 import { ApiTags, ApiOperation, ApiResponse } from "@nestjs/swagger";
-import { FeeHeadService } from "./fee-head.service";
-import { CreateFeeHeadDto } from "./dto/create-fee-head.dto";
-import { FeeHead } from "src/schemas/Fee-head.schema";
+import { FeeHeadService } from "../../modules/fee-head/fee-head.service";
+import { CreateFeeHeadDto } from "../../modules/fee-head/dto/create-fee-head.dto";
+import { FeeHead } from "../../schemas/Fee-head.schema";
 
 @Controller("fee-head")
 @ApiTags("Fee Head")

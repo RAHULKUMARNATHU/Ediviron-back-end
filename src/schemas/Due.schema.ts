@@ -1,7 +1,7 @@
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 import { Document, Types } from "mongoose";
 import { ApiProperty } from "@nestjs/swagger";
-import { FeeHead } from "./Fee-head.schema";
+import { FeeHead } from "../schemas/Fee-head.schema";
 
 @Schema({ timestamps: true })
 export class Due extends Document {

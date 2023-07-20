@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateFeeHeadDto } from './dto/create-fee-head.dto';
 import { InjectModel } from '@nestjs/mongoose';
-import { FeeHead, FeeHeadDocument } from 'src/schemas/Fee-head.schema';
+import { FeeHead, FeeHeadDocument } from '../../schemas/Fee-head.schema';
 import { Model } from 'mongoose';
 
 @Injectable()

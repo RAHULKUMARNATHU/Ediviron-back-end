@@ -1,6 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Types } from "mongoose";
-import { Due } from "src/schemas/Due.schema";
 
 export class CreateInvoiceDto {
   @ApiProperty({
